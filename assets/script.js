@@ -1,10 +1,9 @@
 // Selects html elements
-const quiz = document.getElementById('quiz');
-const results = document.getElementById('results');
+const timer = document.querySelector(".timer");
 let quesNumber = 0;
-let timer = 0
-
-// Questions
+let timeLeft = 0
+let timerstart;
+// Array of Questions
 const javascriptQues = [
     {
         question: "Who invented JavaScript?",
@@ -29,6 +28,16 @@ const javascriptQues = [
       }
 ];
 
+// Starts quiz as well as timer
 
-
+function timeStart() {
+    timerstart = setInterval(function() {
+      // if no time left, stop quiz else count down
+      if (timeLeft <= 0) {
+        stopQuiz();
+      } else {
+        timeLeft--;
+        timer.innerText = timeLeft + " seconds remaining!";}
+      }, 1000);
+};
 
