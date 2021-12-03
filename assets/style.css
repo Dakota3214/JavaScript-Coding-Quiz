@@ -1,0 +1,31 @@
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 40px;
+}
+
+.highscore {
+    display: flex;
+    
+}
+
+section {
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    flex-direction: column;
+}
+
+.welcome {
+    font-size: 30px;
+}
+
+.btn {
+    font-size: 20px;
+    
+}
